@@ -1,2 +1,2 @@
 # Starter-projects
-Contribute your projects, beginner's preferred
+Contribute your beginner friendly python projects
