@@ -167,3 +167,18 @@ onkey(lambda: change(0, -5), 'Down')
 world()
 move()
 done()
+Logo
+
+Free Python Games
+
+
+Donate
+If you or your organization uses Free Games, consider donating:
+
+Donate to Free Python Games
+
+Related Topics
+Documentation overview
+Previous: Memory
+Next: Fidget
+Quick search
