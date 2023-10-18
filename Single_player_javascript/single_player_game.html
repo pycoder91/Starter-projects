@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>3D Tic Tac Toe</title>
+    <style>
+        #menu {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        button {
+            color: rgba(127, 255, 255, 0.75);
+            background: rgba(14, 20, 20, 0.75);
+            outline: 1px solid rgba(127, 255, 255, 0.75);
+            border: 0px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgba(0, 255, 255, 0.5);
+        }
+
+        .gameover {
+            position: absolute;
+            top: 10vh;
+            width: 20%;
+            left: 40%;
+            text-align: center;
+            background: rgba(248, 86, 86, 0.5);
+            border-radius: 10px;
+            font-weight: bold;
+            animation-name: growAndShrink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            visibility: hidden;
+        }
+
+        .gameovervis {
+            visibility: visible;
+        }
+        
+        @keyframes growAndShrink {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <script type="module" src="/public/single_player_game.js"></script>
+    <div id="menu">
+        <button id="restart">RESTART</button>
+        <button id="back_menu">MAIN MENU</button>
+    </div>
+    <div class="gameover ">
+    </div>
+</body>
+
+</html>
