@@ -1,0 +1,31 @@
+import random
+
+blocks = ["stone", "coal", "iron", "diamond"]
+inventory = {"stone": 0, "coal": 0, "iron": 0, "diamond": 0}
+
+def mine_block():
+    return random.choice(blocks)
+
+def build_structure():
+    print("You are building a structure using your inventory resources.")
+    # Logic for building the structure using inventory resources can be added here.
+
+def play_game():
+    while True:
+        action = input("What would you like to do? Mine or Build? (Type 'quit' to exit) ").lower()
+
+        if action == "mine":
+            mined_block = mine_block()
+            print(f"You mined: {mined_block}")
+            inventory[mined_block] += 1
+        elif action == "build":
+            build_structure()
+        elif action == "quit":
+            print("Thanks for playing!")
+            break
+        else:
+            print("Please enter a valid action (mine, build, quit).")
+
+if __name__ == "__main__":
+    print("Welcome to Minecraft Lite!")
+    play_game()
